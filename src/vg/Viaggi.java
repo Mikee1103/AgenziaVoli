@@ -1,6 +1,6 @@
 package vg;
 
-public class Viaggi {
+public abstract class Viaggi {
     private String destinazione;
     private int durata;
     private double costo;
@@ -35,9 +35,12 @@ public class Viaggi {
         this.costo = costo;
     }
 
+    @Override
     public String toString() {
         return "destinazione='" + destinazione + '\'' + ", durata=" + durata + ", costo=" + costo;
     }
+
+    @Override
     public boolean equals(Object o){
         if(o instanceof Viaggi){
             Viaggi r=(Viaggi) o;
@@ -45,4 +48,5 @@ public class Viaggi {
         }
         return false;
     }
+    public abstract  double getCostoViaggio();
 }
