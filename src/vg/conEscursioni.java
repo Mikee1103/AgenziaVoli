@@ -1,6 +1,6 @@
 package vg;
 
-public class conEscursioni extends conPasti{
+public abstract class conEscursioni extends conPasti{
     private  int escursioni;
 
     public conEscursioni(String destinazione, int durata, double costo, boolean pensioneComp,int escursioni){

@@ -1,6 +1,6 @@
 package vg;
 
-public class conVolo extends Viaggi {
+public abstract class conVolo extends Viaggi {
     private boolean andataRitorno;
 
     public conVolo(String destinazione, int durata, double costo, boolean andataRitorno) {
